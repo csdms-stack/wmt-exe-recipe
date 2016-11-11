@@ -1,6 +1,6 @@
 # Current Build Status
 
-Linux, OSX: [![Build Status](https://travis-ci.org/csdms-stack/wmt-exe-recipe.svg?branch=master)](https://travis-ci.org/csdms-stack/dakotathon-recipe)
+Linux, OSX: [![Build Status](https://travis-ci.org/csdms-stack/wmt-exe-recipe.svg?branch=master)](https://travis-ci.org/csdms-stack/wmt-exe-recipe)
 
 # About wmt-exe
 

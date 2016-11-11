@@ -1,0 +1,46 @@
+{% set name = "wmt-exe" %}
+{% set version = "0.1" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/csdms/wmt-exe
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
+
+test:
+  imports:
+    - wmtexe
+  commands:
+    - wmt-slave --help
+    - wmt-exe --help
+    - wmt-get --help
+    - wmt-run --help
+    - wmt-audit --help
+    - wmt-activate --help
+    - wmt-deactivate --help
+    - wmt-script --help
+    - wmt-quickstart --help
+    - wmt-info --help
+    - cmi-make --help
+    - cmi-dup --help
+    - cmi-fetch --help
+
+about:
+  home: http://wmt-exe.readthedocs.io
+  license: MIT
+  license_file: LICENSE
+  summary: The WMT Execution Server, part of the CSDMS Web Modeling
+    Tool, provides tools to configure and run stand-alone or coupled
+    models on a computational resource.
+  dev_url: https://github.com/csdms/wmt-exe

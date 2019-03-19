@@ -24,7 +24,7 @@ build:
 test:
   requires:
     - pymt==0.2 # [py27]
-    - pymt      # [py36]
+    - pymt      # [py3k]
   imports:
     - wmtexe
   commands:
